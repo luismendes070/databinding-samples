@@ -40,6 +40,17 @@ android {
     buildFeatures {
         dataBinding true
     }
+    namespace 'com.example.android.databinding.twowaysample'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+    buildToolsVersion '34.0.0'
+    ndkVersion '25.2.9519653'
 }
 
 dependencies {
